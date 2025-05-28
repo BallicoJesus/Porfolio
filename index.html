@@ -5,18 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ballico Jesús - Portafolio</title>
   <link rel="stylesheet" href="Estilos.css">
-  <link rel="stylesheet" href="JVS.js">
-</head>
+  </head>
 <body>
   <header>
     <h1>Ballico Jesús</h1>
     <p>Estudiante de Programación - UTN</p>
   </header>
 
+  <script>
+    function Saludar(){
+      var User = document.getElementById("txtUser").value;
+      var Mail = document.getElementById("txtMail").value;
+      alert("Te damos la bienvenida, nos comunicaremos contigo")
+      console.log("hola "+User);
+    }
+  </script>
+
+  <h2><img width= "130px" src="foto jisus.png" alt="Foto Jesús"></h2>
+
   <section class="about">
-    <h2>Sobre mí </h2>
+    <h2>Sobre mí</h2>
     <p>Soy estudiante del tercer cuatrimestre de la Tecnicatura Universitaria en Programación en la Universidad Tecnológica Nacional (UTN), cursando la carrera de manera virtual.
-        Me encuentro en constante formación,  adquiriendo sólidos conocimientos en lógica de programación, estructuras de datos y desarrollo de software.
+        Me encuentro en constante formación, adquiriendo sólidos conocimientos en lógica de programación, estructuras de datos y desarrollo de software.
         </p>
         <p>Busco seguir creciendo en el ámbito IT, participando en proyectos que me permitan aplicar mis habilidades y adquirir nuevas experiencias en el mundo del desarrollo de software.</p>
   </section>
@@ -48,6 +58,21 @@
       </a>
     </div>
   </section>
+
+
+
+
+  <h2>Formulario</h2>
+  <div>
+    <label for="">Usuario</label>
+    <input type="text" id="txtUser">
+  </div>
+  <div>
+    <label for="">Mail</label>
+    <input type="mail" id="txtMail">
+  </div>
+  <div><button onclick="Saludar()">Ingresar</button></div>
+
 
   <footer>
     <p>© 2025 Ballico Jesús. Todos los derechos reservados.</p>
